@@ -1,4 +1,3 @@
-import 'package:bikepulse/screens/forgetpw.dart';
 import 'package:bikepulse/screens/signin.dart';
 import 'package:bikepulse/signin_components/core/colors.dart';
 import 'package:bikepulse/signin_components/core/space.dart';
@@ -8,14 +7,14 @@ import 'package:bikepulse/signin_components/widget/text_field.dart';
 import 'package:flutter/material.dart';
 
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class ForgetPwPage extends StatefulWidget {
+  const ForgetPwPage({Key? key}) : super(key: key);
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _ForgetPwPageState createState() =>  _ForgetPwPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class   _ForgetPwPageState  extends State<ForgetPwPage> {
   TextEditingController userName = TextEditingController();
   TextEditingController userPass = TextEditingController();
   @override
@@ -29,12 +28,12 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               SpaceVH(height: 50.0),
               Text(
-                'Welcome Back!',
+                'Forgot Password?',
                 style: headline1,
               ),
               SpaceVH(height: 10.0),
               Text(
-                'Please sign in to your account',
+                'Please reset your password',
                 style: headline3,
               ),
               SpaceVH(height: 60.0),
@@ -50,26 +49,19 @@ class _LoginPageState extends State<LoginPage> {
                 hintTxt: 'Password',
               ),
               SpaceVH(height: 10.0),
-             Align(
-      alignment: Alignment.centerRight,
-      child: Padding(
-        padding: EdgeInsets.only(right: 20.0),
-        child: TextButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (builder) => ForgetPwPage(),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Padding(
+                  padding: EdgeInsets.only(right: 20.0),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Forgot Password?',
+                      style: headline3,
+                    ),
+                  ),
+                ),
               ),
-            );
-          },
-          child: Text(
-            'Forgot Password?',
-            style: TextStyle(fontSize: 16), // replace with headline3 if defined
-          ),
-        ),
-      ),
-    ),
               SpaceVH(height: 100.0),
               Align(
                 alignment: Alignment.bottomCenter,

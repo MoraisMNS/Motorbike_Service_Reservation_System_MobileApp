@@ -1,3 +1,5 @@
+
+import 'package:bikepulse/screens/home.dart';
 import 'package:bikepulse/screens/onboarding.dart';
 import 'package:bikepulse/signin_components/core/style.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +23,8 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: Stlyes.themeData(),
-        home: OnboardingPage(),
+        //home: OnboardingPage(),
+        home: HomePage(),
       ),
     );
   }

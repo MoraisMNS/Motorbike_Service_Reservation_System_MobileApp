@@ -1,7 +1,7 @@
 
 import 'package:bikepulse/onboarding_components/color.dart';
 import 'package:bikepulse/onboarding_components/onboarding_data.dart';
-import 'package:bikepulse/screens/signin.dart';
+import 'package:bikepulse/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -106,7 +106,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SignUpPage(),
+                builder: (context) => LoginPage(),
               ),
             );
             // Add your navigation logic here
