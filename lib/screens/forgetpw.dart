@@ -1,3 +1,5 @@
+import 'package:bikepulse/screens/entercode.dart';
+import 'package:bikepulse/screens/login.dart';
 import 'package:bikepulse/screens/signin.dart';
 import 'package:bikepulse/signin_components/core/colors.dart';
 import 'package:bikepulse/signin_components/core/space.dart';
@@ -15,8 +17,7 @@ class ForgetPwPage extends StatefulWidget {
 }
 
 class   _ForgetPwPageState  extends State<ForgetPwPage> {
-  TextEditingController userName = TextEditingController();
-  TextEditingController userPass = TextEditingController();
+   TextEditingController userEmail = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,71 +34,54 @@ class   _ForgetPwPageState  extends State<ForgetPwPage> {
               ),
               SpaceVH(height: 10.0),
               Text(
-                'Please reset your password',
+                'Enter your email for the verification process.We will send 4-digits code to your email.',
                 style: headline3,
               ),
               SpaceVH(height: 60.0),
               textFild(
-                controller: userName,
+                controller: userEmail,
                 image: 'user.svg',
-                hintTxt: 'Username',
+                hintTxt: 'Email Address',
               ),
-              textFild(
-                controller: userPass,
-                image: 'hide.svg',
-                isObs: true,
-                hintTxt: 'Password',
-              ),
-              SpaceVH(height: 10.0),
-              Align(
-                alignment: Alignment.centerRight,
-                child: Padding(
-                  padding: EdgeInsets.only(right: 20.0),
-                  child: TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Forgot Password?',
-                      style: headline3,
-                    ),
-                  ),
-                ),
-              ),
+            
+            
               SpaceVH(height: 100.0),
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Column(
                   children: [
                     Mainbutton(
-                      onTap: () {},
-                      text: 'Sign in',
-                      btnColor: blueButton,
-                    ),
-                    SpaceVH(height: 20.0),
-                    Mainbutton(
-                      onTap: () {},
-                      text: 'Sign in with google',
-                      image: 'google.png',
-                      btnColor: white,
-                      txtColor: blackBG,
-                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => EnterCodePage(),
+                        ),
+                      );
+                    },
+                    btnColor: blueButton,
+                    text: 'Continue',
+                  ),
+                  
+                    
                     SpaceVH(height: 20.0),
                     TextButton(
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (builder) => SignUpPage()));
+                                builder: (builder) => LoginPage()));
                       },
                       child: RichText(
                         text: TextSpan(children: [
                           TextSpan(
-                            text: 'Don\' have an account? ',
+                            text: 'Already Have an Account? ',
                             style: headline.copyWith(
                               fontSize: 14.0,
                             ),
                           ),
                           TextSpan(
-                            text: ' Sign Up',
+                            text: ' Log in',
                             style: headlineDot.copyWith(
                               fontSize: 14.0,
                             ),
