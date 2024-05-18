@@ -1,6 +1,7 @@
 
 
 import 'package:bikepulse/screens/login.dart';
+import 'package:bikepulse/screens/resetpw.dart';
 import 'package:bikepulse/signin_components/core/colors.dart';
 import 'package:bikepulse/signin_components/core/text_style.dart';
 import 'package:bikepulse/signin_components/widget/main_button.dart';
@@ -82,10 +83,14 @@ class _EnterCodePageState extends State<EnterCodePage> {
                   children: [
                     Mainbutton(
                       onTap: () {
-                        // Implement your verification logic here
+                        Navigator.push(context,
+                        MaterialPageRoute(
+                          builder: (context)=> ResetPwPage(),
+                           ),
+                        );
                       },
                       btnColor: blueButton,
-                      text: 'Verify',
+                      text: 'Continue',
                     ),
                     SpaceVH(height: 20.0),
                     TextButton(
