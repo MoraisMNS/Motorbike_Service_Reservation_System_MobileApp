@@ -1,4 +1,5 @@
 
+import 'package:bikepulse/screens/Home/Widget/home_screen.dart';
 import 'package:bikepulse/signin_components/core/colors.dart';
 import 'package:bikepulse/signin_components/core/space.dart';
 import 'package:bikepulse/signin_components/core/text_style.dart';
@@ -68,10 +69,15 @@ class _SignUpPageState extends State<SignUpPage> {
                 text: 'Sign Up',
                 btnColor: blueButton,
               ),
-              SpaceVH(height: 20.0),
+            SpaceVH(height: 20.0),
               TextButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ),
+                  );
                 },
                 child: RichText(
                   text: TextSpan(children: [
@@ -86,6 +92,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       style: headlineDot.copyWith(
                         fontSize: 14.0,
                       ),
+                      
                     ),
                   ]),
                 ),
