@@ -21,7 +21,7 @@ class CustomAppBar extends StatelessWidget {
           ),
           onPressed: () {},
           icon: Image.asset(
-            "images/icon.png",
+            "assets/image/all.png",
             height: 20,
           ),
         ),

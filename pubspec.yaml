@@ -39,6 +39,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   provider: ^6.1.2
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -65,7 +66,22 @@ flutter:
   assets:
      - assets/icon/
      - assets/image/
+     - assets/all/
+     - assets/beauty/
+     - assets/jewelery/
+     - assets/men fashion/
+     - assets/shoes/
+     - assets/women fashion/
+
+
+  
+
+
      - assets/animation1.json
+     
+     
+
+     
 
   fonts:
     - family: SF Pro

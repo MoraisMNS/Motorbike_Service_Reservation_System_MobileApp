@@ -11,26 +11,26 @@ class Category {
 final List<Category> categoriesList = [
   Category(
     title: "All",
-    image: "images/all.png",
+    image: "assets/image/backimg6.jpg",
   ),
   Category(
     title: "Shoes",
-    image: "images/shoes.png",
+    image: "assets/image/backimg6.jpg",
   ),
   Category(
     title: "Beauty",
-    image: "images/beauty.png",
+    image: "assets/image/backimg6.jpg",
   ),
   Category(
     title: "Women's\nFashion",
-    image: "images/image1.png",
+   image: "assets/image/backimg6.jpg",
   ),
   Category(
     title: "Jewelry",
-    image: "images/jewelry.png",
+    image: "assets/image/backimg6.jpg",
   ),
   Category(
     title: "Men's\nFashion",
-    image: "images/men.png",
+    image: "assets/image/backimg6.jpg",
   ),
 ];

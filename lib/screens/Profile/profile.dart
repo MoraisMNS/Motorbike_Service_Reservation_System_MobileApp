@@ -10,7 +10,7 @@ class Profile extends StatelessWidget {
       body: Stack(
         children: [
           Image.asset(
-            "images/profile3.png",
+            "assets/image/all/miband.jpg",
             fit: BoxFit.cover,
             height: size.height,
             width: size.width,
@@ -42,7 +42,7 @@ class Profile extends StatelessWidget {
                                     const CircleAvatar(
                                       radius: 42,
                                       backgroundImage:
-                                          AssetImage("images/profile3.png"),
+                                          AssetImage("assets/image/all.png"),
                                     ),
                                     Positioned(
                                       bottom: 0,
@@ -104,14 +104,14 @@ class Profile extends StatelessWidget {
                             ),
                             const SizedBox(height: 10),
                             const Text(
-                              "Winnie Vasquez",
+                              "BikePulse IT Development Team",
                               style: TextStyle(
                                 fontWeight: FontWeight.w800,
                                 fontSize: 35,
                               ),
                             ),
                             const Text(
-                              "Flutter Developer",
+                              "Trusted Solution for Bikes",
                               style: TextStyle(
                                   fontWeight: FontWeight.w800,
                                   fontSize: 16,
@@ -121,7 +121,7 @@ class Profile extends StatelessWidget {
                               height: 15,
                             ),
                             const Text(
-                              "A Flutter developer is a software engineer who has proficiency with the Flutter framework to develop mobile, web,",
+                              "Experience top-notch, hassle-free bike servicing with BikePulse - where your ride gets the care it deserves!",
                               style: TextStyle(
                                 fontSize: 16,
                               ),
@@ -138,7 +138,7 @@ class Profile extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            friendAndMore("FRIENDS", "2318"),
+                            friendAndMore("CUSTOMERS", "20318"),
                             friendAndMore("FOLLOWING", "364"),
                             friendAndMore("FOLLOWER", "175"),
                           ],
