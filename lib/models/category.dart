@@ -14,23 +14,23 @@ final List<Category> categoriesList = [
     image: "assets/image/backimg6.jpg",
   ),
   Category(
-    title: "Shoes",
+    title: "Spare Parts",
     image: "assets/image/backimg6.jpg",
   ),
   Category(
-    title: "Beauty",
+    title: "Engine Parts",
     image: "assets/image/backimg6.jpg",
   ),
   Category(
-    title: "Women's\nFashion",
+    title: "Wheels and Tires",
    image: "assets/image/backimg6.jpg",
   ),
   Category(
-    title: "Jewelry",
+    title: "Body and Frame",
     image: "assets/image/backimg6.jpg",
   ),
   Category(
-    title: "Men's\nFashion",
+    title: "Accessories",
     image: "assets/image/backimg6.jpg",
   ),
 ];
